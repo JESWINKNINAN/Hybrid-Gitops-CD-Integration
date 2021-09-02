@@ -8,19 +8,19 @@ spec:
   git:
     checkout:
       ref:
-        branch: testcluster
+        branch: argo-flux-test
     commit:
       author:
         email: fluxcdbot@users.noreply.github.com
         name: fluxcdbot
       messageTemplate: '{{range .Updated.Images}}{{println .}}{{end}}'
     push:
-      branch: testcluster
+      branch: argo-flux-test
   interval: 1m0s
   sourceRef:
     kind: GitRepository
     name: jeswinkninan
   update:
-    path: ./clusters/testcluster/
+    path: ./clusters/argoflux/
     strategy: Setters
 
