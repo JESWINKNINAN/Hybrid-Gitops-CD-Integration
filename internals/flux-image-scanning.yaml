@@ -1,0 +1,12 @@
+---
+apiVersion: image.toolkit.fluxcd.io/v1beta1
+kind: ImageRepository
+metadata:
+  name: jeswinkninan
+  namespace: flux-system
+spec:
+  image: jeswinkninan/static
+  interval: 5m0s
+  secretRef:
+    name: imagepull
+

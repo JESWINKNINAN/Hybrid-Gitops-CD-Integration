@@ -1,0 +1,14 @@
+---
+apiVersion: source.toolkit.fluxcd.io/v1beta1
+kind: GitRepository
+metadata:
+  name: jeswinkninan
+  namespace: flux-system
+spec:
+  interval: 1m
+  url: ssh://git@github.com/JESWINKNINAN/flux-cd-v2-demo
+  ref: 
+    branch: main
+  secretRef:
+    name: ssh-credentials
+---
