@@ -1,1 +1,1 @@
-# flux-cd-v2-demo
+# testing argo-flux integration
