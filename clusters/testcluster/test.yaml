@@ -18,7 +18,7 @@ spec:
         app: test
     spec:
       containers:
-      - image: jeswinkninan/static:1.0.1
+      - image: jeswinkninan/static:1.0.1 # {"$imagepolicy": "flux-system:jeswinkninan"}
         name: test
         resources: {}
 status: {}
